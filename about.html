@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Page Transition Using BarbaJS & GSAP</title>
+    <link rel="stylesheet" href="./css/index.css" />
+    <link rel="stylesheet" href="./css/main.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    />
+  </head>
+
+  <body data-barba="wrapper" class="scan-page">
+    <div class="load-container">
+      <div class="loading-screen"></div>
+    </div>
+
+    <main data-barba="container" data-barba-namespace="about-section">
+      <div class="header">
+        <h1 class="title animate-this">Scan QR</h1>
+        <a id="reload" href="index.html">
+          <div id="toggle1">
+            <p class="scan-qr">Scan<br />&nbsp;QR</p>
+            <p class="img2qr">
+              Image <br />
+              &nbsp; ⬇️ <br />
+              &nbsp; QR
+            </p>
+            <i class="indicator1"></i>
+          </div>
+        </a>
+      </div>
+      <!-- <script async src="//s.imgur.com/min/embed.js" charset="utf-8"></script> -->
+    </main>
+
+    <div class="bruhh">
+      <div class="wrapper">
+        <form action="#">
+          <input type="file" hidden />
+          <img src="#" alt="qr-code" />
+          <div class="content">
+            <i class="fas fa-cloud-upload"></i>
+            <p>Upload QR Code to Read</p>
+          </div>
+        </form>
+        <div class="details">
+          <textarea spellcheck="false" disabled></textarea>
+          <div class="buttons">
+            <button class="close">Close</button>
+            <button onclick="op2()" class="copy">Show Image</button>
+          </div>
+        </div>
+      </div>
+      
+      <div class="embed">
+        <blockquote
+          id="bolbol"
+          class="imgur-embed-pub bolbol"
+          lang="en"
+          data-id=""
+          data-context="false"
+        >
+          <a id="href2" href=""></a>
+        </blockquote>
+        <script async src="//s.imgur.com/min/embed.js" charset="utf-8"></script>
+       
+       <script>
+        function op2() {
+        var data1 = data;
+        alert(data);
+        var bro = data;
+        alert(bro);
+        const element = document.getElementById("bolbol"); 
+        element.setAttribute("data-id", data1 ); 
+        let dataid = element.getAttribute("data-id"); 
+        alert(dataid);
+        // document.getElementById("demo").innerHTML = text;
+      }
+      // op2();
+        </script>
+      </div>
+    </div>
+    <!-- <script src="">
+
+    </script> -->
+
+    <!-- <div class="trial">
+      <h3 id="myH1" class="democlass">The Element Object</h3>
+      <h2>The getAttribute() Method</h2>
+      <p>The value of the class attribute of the h1 element is:</p>
+      <p id="demo"></p>
+    </div> -->
+
+
+    <!-- <script>
+      function op2() {
+        var data1 = data;
+        alert(data);
+        var bro = data;
+        alert(bro);
+        const element = document.getElementById("bolbol"); 
+        element.setAttribute("data-id", data1 ); 
+        let dataid = element.getAttribute("data-id"); 
+        alert(dataid);
+        // document.getElementById("demo").innerHTML = text;
+      }
+      op2();
+
+      </script> -->
+    <script>
+      function op (){
+        alert(data);  
+        alert(href1);
+        const element = document.getElementsByClassName("bolbol"); 
+        // alert(element);
+        // let href2 = document.getElementById("href2");
+        // bq.setAttribute("data-id", data);
+        // href2.setAttribute("href", href1);
+        // let value = element.getAttribute("class");
+        // document.getElementById("demo").innerHTML = value;
+        // alert(value);
+        return false;
+      }
+      let data = "wrf1rGj";
+      let url = "//i.imgur.com/wrf1rGj"
+      
+      const toggle = document.getElementById("toggle1");
+      toggle.onclick = function () {
+        toggle.classList.toggle("active");
+        setTimeout(function () {
+          window.location.reload();
+        }, 2000);
+      };
+      </script>
+      
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://unpkg.com/@barba/core"></script>
+    <script
+      type="text/javascript"
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.4/gsap.min.js"
+    ></script>
+    <script src="./js/main.js"></script>
+    <script src="./js/script.js"></script>
+
+
+  </body>
+</html>
